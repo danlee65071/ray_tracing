@@ -1,19 +1,14 @@
  // ===------------------------------------------------------------------------===
  // >  Author: hcharlsi, eshakita, esobchak, amuriel
- // >  Create Time: 2022-05-08 20:21:11
+ // >  Create Time: 2022-05-09 12:18:57
  // >  Modified by: hcharlsi, eshakita, esobchak, amuriel
- // >  Modified time: 2022-05-09 15:31:48
+ // >  Modified time: 2022-05-09 13:12:07
  // ===------------------------------------------------------------------------===
 
-#pragma once
+#include "AFigure.hpp"
 
-#include "Ambient.hpp"
+AFigure::AFigure(const std::string& params): __params(params) {}
 
-class Lightning: public Ambient
-{
-    private:
-        
-    public:
-        Lightning(const std::string& params);
-        ~Lightning();
-};
+AFigure::~AFigure() {}
+
+const std::string& AFigure::getParams() const { return this->__params; }

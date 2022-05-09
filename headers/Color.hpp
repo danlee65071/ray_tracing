@@ -1,19 +1,19 @@
  // ===------------------------------------------------------------------------===
  // >  Author: hcharlsi, eshakita, esobchak, amuriel
- // >  Create Time: 2022-05-08 20:21:11
+ // >  Create Time: 2022-05-09 15:05:45
  // >  Modified by: hcharlsi, eshakita, esobchak, amuriel
- // >  Modified time: 2022-05-09 15:31:48
+ // >  Modified time: 2022-05-09 15:12:31
  // ===------------------------------------------------------------------------===
 
 #pragma once
 
-#include "Ambient.hpp"
+#include "utils.hpp"
 
-class Lightning: public Ambient
+class Color
 {
     private:
-        
+        std::string __params;
+        GLfloat     __color_v[3] = {0, 0, 0};
     public:
-        Lightning(const std::string& params);
-        ~Lightning();
+        explicit Color(const std::string& params);
 };

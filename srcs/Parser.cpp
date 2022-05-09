@@ -2,7 +2,7 @@
  // >  Author: hcharlsi, eshakita, esobchak, amuriel
  // >  Create Time: 2022-05-07 16:13:47
  // >  Modified by: hcharlsi, eshakita, esobchak, amuriel
- // >  Modified time: 2022-05-08 21:04:41
+ // >  Modified time: 2022-05-09 12:06:53
  // ===------------------------------------------------------------------------===
 
 #include "Parser.hpp"
@@ -21,8 +21,6 @@ Parser::Parser(const std::string& filename): __file_name(filename)
         }
         file.close();
     }
-    for (auto it = this->__v.begin(); it != this->__v.end(); ++it)
-        std::cout << *it << std::endl;
 }
 
 Parser::~Parser() {}

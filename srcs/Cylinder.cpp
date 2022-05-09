@@ -1,19 +1,12 @@
  // ===------------------------------------------------------------------------===
  // >  Author: hcharlsi, eshakita, esobchak, amuriel
- // >  Create Time: 2022-05-08 20:21:11
+ // >  Create Time: 2022-05-09 12:21:33
  // >  Modified by: hcharlsi, eshakita, esobchak, amuriel
- // >  Modified time: 2022-05-09 15:31:48
+ // >  Modified time: 2022-05-09 12:28:42
  // ===------------------------------------------------------------------------===
 
-#pragma once
+#include "Cylinder.hpp"
 
-#include "Ambient.hpp"
+Cylinder::Cylinder(const std::string& params): AFigure(params) {}
 
-class Lightning: public Ambient
-{
-    private:
-        
-    public:
-        Lightning(const std::string& params);
-        ~Lightning();
-};
+Cylinder::~Cylinder() {}

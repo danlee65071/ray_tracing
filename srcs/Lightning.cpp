@@ -1,19 +1,12 @@
  // ===------------------------------------------------------------------------===
  // >  Author: hcharlsi, eshakita, esobchak, amuriel
- // >  Create Time: 2022-05-08 20:21:11
+ // >  Create Time: 2022-05-09 12:09:51
  // >  Modified by: hcharlsi, eshakita, esobchak, amuriel
- // >  Modified time: 2022-05-09 15:31:48
+ // >  Modified time: 2022-05-09 12:11:10
  // ===------------------------------------------------------------------------===
 
-#pragma once
+#include "Lightning.hpp"
 
-#include "Ambient.hpp"
+Lightning::Lightning(const std::string& params): Ambient(params) {}
 
-class Lightning: public Ambient
-{
-    private:
-        
-    public:
-        Lightning(const std::string& params);
-        ~Lightning();
-};
+Lightning::~Lightning() {}

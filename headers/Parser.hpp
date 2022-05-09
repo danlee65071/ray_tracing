@@ -2,7 +2,7 @@
 // >  Author: hcharlsi, eshakita, esobchak, amuriel
 // >  Create Time: 2022-05-07 16:14:06
  // >  Modified by: hcharlsi, eshakita, esobchak, amuriel
- // >  Modified time: 2022-05-08 20:08:53
+ // >  Modified time: 2022-05-09 12:39:39
 // ===------------------------------------------------------------------------===
 
 #pragma once
@@ -23,8 +23,6 @@ class Parser
         void CheckFileName() const;
 
         size_t CheckSpace(const std::string& line) const;
-
-
     public:
         explicit Parser(const std::string& filename);
         ~Parser();

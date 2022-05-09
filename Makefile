@@ -10,14 +10,38 @@ NAME = rt
 
 # cpp файлы
 DIR_SRCS = srcs
-SRCS = main.cpp RayTracing.cpp Parser.cpp
+SRCS = 	main.cpp \
+		RayTracing.cpp \
+		Parser.cpp \
+		Ambient.cpp \
+		Camera.cpp \
+		AFigure.cpp \
+		Lightning.cpp \
+		Cone.cpp \
+		Cylinder.cpp \
+		Plane.cpp \
+		Sphere.cpp \
+		Color.cpp
+
 PATH_SRCS = $(addprefix $(DIR_SRCS)/, $(SRCS))
 
 DIRS = 
 
 # hpp файлы
 DIR_HEADERS = headers
-HEADERS = RayTracing.hpp Parser.hpp Ambient.hpp Camera.hpp Figure.hpp Lightning.hpp
+HEADERS = 	RayTracing.hpp \
+			Parser.hpp \
+			Ambient.hpp \
+			Camera.hpp \
+			AFigure.hpp \
+			Lightning.hpp \
+			Cone.hpp \
+			Cylinder.hpp \
+			Plane.hpp \
+			Sphere.hpp \
+			utils.hpp \
+			Color.hpp
+
 PATH_HEADERS = $(addprefix $(DIR_HEADERS)/, $(HEADERS))
 
 # объектники

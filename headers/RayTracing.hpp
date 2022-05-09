@@ -7,37 +7,30 @@
 
 #pragma once
 
-#include <iostream>
-// #include <OpenGl/glu.h>
-// #include <OpenGL/gl.h>
-// #include <GLUT/glut.h>
 #include "Parser.hpp"
 #include "Ambient.hpp"
 #include "Camera.hpp"
-#include "Figure.hpp"
+#include "AFigure.hpp"
 #include "Lightning.hpp"
-#include <vector>
-#include <map>
-#include <string>
-#include <memory>
-#include <functional>
+#include "Plane.hpp"
+#include "Cylinder.hpp"
+#include "Cone.hpp"
+#include "Sphere.hpp"
+#include "utils.hpp"
 
 class RayTracing
 {
     private:
-        typedef void (RayTracing::*CreateObj)(const std::string& params);
-
         std::vector<std::unique_ptr<Ambient> >                              __v_ambient;
         std::vector<std::unique_ptr<Camera> >                               __v_camera;
-        std::vector<std::unique_ptr<Figure> >                               __v_figure;
-        std::map<std::string, std::function<std::unique_ptr<Ambient>(const std::string&)> >     __m;
+        std::vector<std::unique_ptr<AFigure> >                              __v_figure;
+        std::map<std::string, std::function<void(const std::string&)> >     __m;
 
-        void CreateAmbient(const std::string& params);
-        void CreateCamera(const std::string& params);
-        void CreateFigure(const std::string& params);
+        void FillMapTypes();
     public:
         explicit RayTracing(const std::vector<std::string>& pars_vector);
-        ~RayTracing();
-
+        ~RayTracing() {}
+        // void setObject(std::unique_ptr<Camera> camera);
+        // void setObject(std::unique_ptr<Ambient> figure);
 
 };

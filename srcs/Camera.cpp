@@ -1,19 +1,17 @@
  // ===------------------------------------------------------------------------===
  // >  Author: hcharlsi, eshakita, esobchak, amuriel
- // >  Create Time: 2022-05-08 20:21:11
+ // >  Create Time: 2022-05-09 12:00:03
  // >  Modified by: hcharlsi, eshakita, esobchak, amuriel
- // >  Modified time: 2022-05-09 15:31:48
+ // >  Modified time: 2022-05-09 12:03:12
  // ===------------------------------------------------------------------------===
 
-#pragma once
+#include "Camera.hpp"
 
-#include "Ambient.hpp"
-
-class Lightning: public Ambient
+Camera::Camera(const std::string& params): __params(params)
 {
-    private:
-        
-    public:
-        Lightning(const std::string& params);
-        ~Lightning();
-};
+
+}
+
+Camera::~Camera() {}
+
+const std::string& Camera::getParams() const { return this->__params; }

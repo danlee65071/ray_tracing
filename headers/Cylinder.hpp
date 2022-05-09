@@ -1,14 +1,18 @@
  // ===------------------------------------------------------------------------===
  // >  Author: hcharlsi, eshakita, esobchak, amuriel
- // >  Create Time: 2022-05-08 20:21:11
+ // >  Create Time: 2022-05-09 12:22:27
  // >  Modified by: hcharlsi, eshakita, esobchak, amuriel
- // >  Modified time: 2022-05-08 20:23:56
+ // >  Modified time: 2022-05-09 12:48:21
  // ===------------------------------------------------------------------------===
 
 #pragma once
 
-// interface
-class Figure
-{
+#include "AFigure.hpp"
 
+class Cylinder: public AFigure
+{
+    private:
+    public:
+        Cylinder(const std::string& params);
+        ~Cylinder() override;
 };
