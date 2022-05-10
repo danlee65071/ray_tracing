@@ -12,8 +12,31 @@
 class Color
 {
     private:
-        std::string __params;
-        GLfloat     __color_v[3] = {0, 0, 0};
+        std::string             __params;
+        std::vector<GLfloat>    __v_color;
     public:
+        Color();
         explicit Color(const std::string& params);
+        ~Color();
+
+        void setColor(const std::string& params);
+        const std::vector<GLfloat>& getColor3fv() const;
+
+        class TooManyParameters: public std::exception
+        {
+            public:
+                const char* what() const throw();
+        };
+
+        class TooLowParameters: public std::exception
+        {
+            public:
+                const char* what() const throw();
+        };
+
+        class InvalidParameter: public std::exception
+        {
+            public:
+                const char* what() const throw();
+        };
 };

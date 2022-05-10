@@ -12,9 +12,9 @@ RayTracing::RayTracing(const std::vector<std::string>& pars_vector)
     std::stringstream   ss;
     std::string         key;
     this->FillMapTypes();
-    std::cout << this->__v_ambient.size() << std::endl;
-    std::cout << this->__v_camera.size() << std::endl;
-    std::cout << this->__v_figure.size() << std::endl;
+    // std::cout << this->__v_ambient.size() << std::endl;
+    // std::cout << this->__v_camera.size() << std::endl;
+    // std::cout << this->__v_figure.size() << std::endl;
     for (auto &line: pars_vector)
     {
         ss.clear();
@@ -23,9 +23,9 @@ RayTracing::RayTracing(const std::vector<std::string>& pars_vector)
         ss >> key;
         this->__m[key](ss.str());
     }
-    std::cout << this->__v_ambient.size() << std::endl;
-    std::cout << this->__v_camera.size() << std::endl;
-    std::cout << this->__v_figure.size() << std::endl;
+    // std::cout << this->__v_ambient.size() << std::endl;
+    // std::cout << this->__v_camera.size() << std::endl;
+    // std::cout << this->__v_figure.size() << std::endl;
 }
 
 void RayTracing::FillMapTypes()

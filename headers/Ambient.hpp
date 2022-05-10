@@ -14,9 +14,12 @@ class Ambient
     private:
         std::string __params;
         GLfloat     __intensive;
+        Color       __color;
     public:
         explicit Ambient(const std::string& params);
         virtual ~Ambient() {}
         
         const std::string& getParams() const;
+        GLfloat getIntensive() const;
+        const Color& getColor() const;
 };

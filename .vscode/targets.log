@@ -1,0 +1,438 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 3.81
+# Copyright (C) 2006  Free Software Foundation, Inc.
+# This is free software; see the source for copying conditions.
+# There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.
+
+# This program built for i386-apple-darwin11.3.0
+
+# Make data base, printed on Tue May 10 12:04:13 2022
+
+# Variables
+
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# makefile (from `Makefile', line 28)
+DIRS = 
+# environment
+VSCODE_LOG_NATIVE = false
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# automatic
+@F = $(notdir $@)
+# makefile
+CURDIR := /Users/nercnom/Desktop/school21-main-/ray_tracing
+# makefile
+SHELL = /bin/sh
+# makefile (from `Makefile', line 59)
+RM = rm -rf
+# environment
+VSCODE_NLS_CONFIG = {"locale":"ru","availableLanguages":{},"_languagePackSupport":true}
+# environment
+_ = /usr/bin/make
+# makefile (from `Makefile', line 1)
+MAKEFILE_LIST :=  Makefile
+# makefile (from `Makefile', line 50)
+PATH_OBJS = $(addprefix $(DIR_OBJS)/, $(OBJS))
+# environment
+VSCODE_NODE_CACHED_DATA_DIR = /Users/nercnom/Library/Application Support/Code/CachedData/054a9295330880ed74ceaedda236253b4f39a335
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# environment
+__CFBundleIdentifier = com.microsoft.VSCode
+# environment
+VSCODE_IPC_HOOK_EXTHOST = /var/folders/vb/ntlqwsfx271119zv7xp99gh80000gn/T/vscode-ipc-b2f05561-b584-472c-8eb4-e9d817a5c1d4.sock
+# environment
+VSCODE_CWD = /
+# environment
+PATH = /usr/bin:/bin:/usr/sbin:/sbin
+# makefile (from `Makefile', line 48)
+DIR_OBJS = objs
+# environment
+LaunchInstanceID = E70B994B-5EB2-4833-A495-6889D55CF0ED
+# environment
+VSCODE_LOG_STACK = false
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# default
+.FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
+# environment
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.RSovpg0pTh/Listeners
+# automatic
+%F = $(notdir $%)
+# environment
+DISPLAY = /private/tmp/com.apple.launchd.wq0me0DhfD/org.macosforge.xquartz:0
+# environment
+VSCODE_PIPE_LOGGING = true
+# makefile (from `Makefile', line 49)
+OBJS = $(patsubst %.cpp, %.o, $(SRCS))
+# environment
+PWD = /Users/nercnom/Desktop/school21-main-/ray_tracing
+# makefile (from `Makefile', line 45)
+PATH_HEADERS = $(addprefix $(DIR_HEADERS)/, $(HEADERS))
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# makefile (from `Makefile', line 62)
+GREEN = \033[0;32m
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/services/extensions/node/extensionHostProcess
+# environment
+HOME = /Users/nercnom
+# makefile (from `Makefile', line 26)
+PATH_SRCS = $(addprefix $(DIR_SRCS)/, $(SRCS))
+# default
+MAKEFILEPATH := /Applications/Xcode.app/Contents/Developer/Makefiles
+# environment
+LOGNAME = nercnom
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# makefile (from `Makefile', line 32)
+HEADERS = RayTracing.hpp Parser.hpp Ambient.hpp Camera.hpp AFigure.hpp Lightning.hpp Cone.hpp Cylinder.hpp Plane.hpp Sphere.hpp utils.hpp Color.hpp
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# makefile (from `Makefile', line 31)
+DIR_HEADERS = headers
+# environment
+XPC_FLAGS = 0x0
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# makefile (from `Makefile', line 13)
+SRCS = main.cpp RayTracing.cpp Parser.cpp Ambient.cpp Camera.cpp AFigure.cpp Lightning.cpp Cone.cpp Cylinder.cpp Plane.cpp Sphere.cpp Color.cpp
+# environment
+SHLVL = 1
+# makefile (from `Makefile', line 53)
+CC = c++
+# makefile (from `Makefile', line 12)
+DIR_SRCS = srcs
+# default
+MAKE_VERSION := 3.81
+# environment
+USER = nercnom
+# makefile
+.DEFAULT_GOAL := all
+# makefile (from `Makefile', line 9)
+NAME = rt
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# default
+MAKE_COMMAND := /Applications/Xcode.app/Contents/Developer/usr/bin/make
+# default
+.VARIABLES := 
+# environment
+TMPDIR = /var/folders/vb/ntlqwsfx271119zv7xp99gh80000gn/T/
+# automatic
+*F = $(notdir $*)
+# environment
+VSCODE_IPC_HOOK = /Users/nercnom/Library/Application Support/Code/1.56.2-main.sock
+# makefile
+MAKEFLAGS = Rrqp
+# environment
+MFLAGS = -Rrqp
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.78735390.78735401
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# automatic
++F = $(notdir $+)
+# environment
+__CF_USER_TEXT_ENCODING = 0x1F5:0x7:0x31
+# environment
+COMMAND_MODE = unix2003
+# default
+MAKEFILES := 
+# automatic
+<F = $(notdir $<)
+# environment
+LC_ALL = C
+# makefile (from `Makefile', line 63)
+RESET = \033[0m
+# environment
+SECURITYSESSIONID = 186a6
+# automatic
+^F = $(notdir $^)
+# default
+SUFFIXES := 
+# makefile (from `Makefile', line 56)
+FLAGS = -g -std=c++17
+# default
+.INCLUDE_DIRS = /usr/local/include
+# environment
+MAKELEVEL := 0
+# environment
+LANG = C
+# environment
+VSCODE_PID = 397
+# variable set hash-table stats:
+# Load=81/1024=8%, Rehash=0, Collisions=7/120=6%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 16777220, inode 87833951): 10 files, no impossibilities.
+
+# 10 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+objs/%.o: srcs/%.cpp headers/RayTracing.hpp headers/Parser.hpp headers/Ambient.hpp headers/Camera.hpp headers/AFigure.hpp headers/Lightning.hpp headers/Cone.hpp headers/Cylinder.hpp headers/Plane.hpp headers/Sphere.hpp headers/utils.hpp headers/Color.hpp
+#  commands to execute (from `Makefile', line 124):
+	@$(CC) $(FLAGS) -I $(DIR_HEADERS) -c $< -o $@
+	@echo "$(GREEN).$(RESET)\c"
+	
+
+# 1 implicit rules, 0 (0.0%) terminal.
+
+# Files
+
+# Not a target:
+objs/Sphere.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+objs/Plane.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+objs/main.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+all: rt
+#  Phony target (prerequisite of .PHONY).
+#  Command-line target.
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/4=0%
+
+.PHONY: all clean fclean re write_logo create_dirs
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+objs/Color.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+objs/Cone.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+create_dirs:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 116):
+	@mkdir -p $(DIR_OBJS) $(DIR_OBJS)/$(DIRS)
+	
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-09 23:41:23
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+objs/Cylinder.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+fclean: clean
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 134):
+	@$(RM) $(NAME)
+	@echo "$(GREEN) fclean instruction was executed $(RESET)"
+	
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+objs/Lightning.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+re: fclean all
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+ 
+# Not a target:
+objs/RayTracing.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+clean:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 129):
+	@$(RM) $(DIR_OBJS)
+	@echo "$(GREEN) clean instruction was executed $(RESET)"
+	
+
+write_logo:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `'
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := write_logo
+# automatic
+# % := 
+# automatic
+# * := 
+# automatic
+# + := 
+# automatic
+# | := 
+# automatic
+# < := 
+# automatic
+# ^ := 
+# automatic
+# ? := 
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=2/12=17%
+#  commands to execute (from `Makefile', line 77):
+	@echo "$(GREEN)\n\
+	░██████╗██╗███╗░░░███╗██████╗░██╗░░░░░██╗░░░██╗  ████████╗██╗░░██╗███████╗  ██████╗░███████╗░██████╗████████╗\n\
+	██╔════╝██║████╗░████║██╔══██╗██║░░░░░╚██╗░██╔╝  ╚══██╔══╝██║░░██║██╔════╝  ██╔══██╗██╔════╝██╔════╝╚══██╔══╝\n\
+	╚█████╗░██║██╔████╔██║██████╔╝██║░░░░░░╚████╔╝░  ░░░██║░░░███████║█████╗░░  ██████╦╝█████╗░░╚█████╗░░░░██║░░░\n\
+	░╚═══██╗██║██║╚██╔╝██║██╔═══╝░██║░░░░░░░╚██╔╝░░  ░░░██║░░░██╔══██║██╔══╝░░  ██╔══██╗██╔══╝░░░╚═══██╗░░░██║░░░\n\
+	██████╔╝██║██║░╚═╝░██║██║░░░░░███████╗░░░██║░░░  ░░░██║░░░██║░░██║███████╗  ██████╦╝███████╗██████╔╝░░░██║░░░\n\
+	╚═════╝░╚═╝╚═╝░░░░░╚═╝╚═╝░░░░░╚══════╝░░░╚═╝░░░  ░░░╚═╝░░░╚═╝░░╚═╝╚══════╝  ╚═════╝░╚══════╝╚═════╝░░░░╚═╝░░░\n\
+	\n\
+	██╗░░██╗░█████╗░██████╗░██████╗░  ███╗░░░███╗██╗░░░██╗██╗░░░░░████████╗██╗░░░░░░██████╗░\n\
+	██║░░██║██╔══██╗██╔══██╗██╔══██╗  ████╗░████║██║░░░██║██║░░░░░╚══██╔══╝██║░░░░░░██╔══██╗\n\
+	███████║███████║██████╔╝██║░░██║  ██╔████╔██║██║░░░██║██║░░░░░░░░██║░░░██║█████╗██║░░██║\n\
+	██╔══██║██╔══██║██╔══██╗██║░░██║  ██║╚██╔╝██║██║░░░██║██║░░░░░░░░██║░░░██║╚════╝██║░░██║\n\
+	██║░░██║██║░░██║██║░░██║██████╔╝  ██║░╚═╝░██║╚██████╔╝███████╗░░░██║░░░██║░░░░░░██████╔╝\n\
+	╚═╝░░╚═╝╚═╝░░╚═╝╚═╝░░╚═╝╚═════╝░  ╚═╝░░░░░╚═╝░╚═════╝░╚══════╝░░░╚═╝░░░╚═╝░░░░░░╚═════╝░\n\
+	\n\
+	██████╗░░█████╗░██╗░░░██╗░░░░░░████████╗██████╗░░█████╗░░█████╗░██╗███╗░░██╗░██████╗░\n\
+	██╔══██╗██╔══██╗╚██╗░██╔╝░░░░░░╚══██╔══╝██╔══██╗██╔══██╗██╔══██╗██║████╗░██║██╔════╝░\n\
+	██████╔╝███████║░╚████╔╝░█████╗░░░██║░░░██████╔╝███████║██║░░╚═╝██║██╔██╗██║██║░░██╗░\n\
+	██╔══██╗██╔══██║░░╚██╔╝░░╚════╝░░░██║░░░██╔══██╗██╔══██║██║░░██╗██║██║╚████║██║░░╚██╗\n\
+	██║░░██║██║░░██║░░░██║░░░░░░░░░░░░██║░░░██║░░██║██║░░██║╚█████╔╝██║██║░╚███║╚██████╔╝\n\
+	╚═╝░░╚═╝╚═╝░░╚═╝░░░╚═╝░░░░░░░░░░░░╚═╝░░░╚═╝░░╚═╝╚═╝░░╚═╝░╚════╝░╚═╝╚═╝░░╚══╝░╚═════╝░\n\
+	\n\
+	███╗░░░███╗░█████╗░████████╗██╗░░██╗███████╗██████╗░  ██╗░░░░░░█████╗░██╗░░░██╗███████╗██████╗░  ██████╗░██╗░░░██╗\n\
+	████╗░████║██╔══██╗╚══██╔══╝██║░░██║██╔════╝██╔══██╗  ██║░░░░░██╔══██╗██║░░░██║██╔════╝██╔══██╗  ██╔══██╗╚██╗░██╔╝\n\
+	██╔████╔██║██║░░██║░░░██║░░░███████║█████╗░░██████╔╝  ██║░░░░░██║░░██║╚██╗░██╔╝█████╗░░██████╔╝  ██████╦╝░╚████╔╝░\n\
+	██║╚██╔╝██║██║░░██║░░░██║░░░██╔══██║██╔══╝░░██╔══██╗  ██║░░░░░██║░░██║░╚████╔╝░██╔══╝░░██╔══██╗  ██╔══██╗░░╚██╔╝░░\n\
+	██║░╚═╝░██║╚█████╔╝░░░██║░░░██║░░██║███████╗██║░░██║  ███████╗╚█████╔╝░░╚██╔╝░░███████╗██║░░██║  ██████╦╝░░░██║░░░\n\
+ 
+	╚═╝░░░░░╚═╝░╚════╝░░░░╚═╝░░░╚═╝░░╚═╝╚══════╝╚═╝░░╚═╝  ╚══════╝░╚════╝░░░░╚═╝░░░╚══════╝╚═╝░░╚═╝  ╚═════╝░░░░╚═╝░░░\n\
+	\n\
+	██████╗░███████╗░█████╗░░█████╗░███████╗  ██████╗░██╗░░░██╗██╗░░██╗███████╗░██████╗\n\
+	██╔══██╗██╔════╝██╔══██╗██╔══██╗██╔════╝  ██╔══██╗██║░░░██║██║░██╔╝██╔════╝██╔════╝\n\
+	██████╔╝█████╗░░███████║██║░░╚═╝█████╗░░  ██║░░██║██║░░░██║█████═╝░█████╗░░╚█████╗░\n\
+	██╔═══╝░██╔══╝░░██╔══██║██║░░██╗██╔══╝░░  ██║░░██║██║░░░██║██╔═██╗░██╔══╝░░░╚═══██╗\n\
+	██║░░░░░███████╗██║░░██║╚█████╔╝███████╗  ██████╔╝╚██████╔╝██║░╚██╗███████╗██████╔╝\n\
+	╚═╝░░░░░╚══════╝╚═╝░░╚═╝░╚════╝░╚══════╝  ╚═════╝░░╚═════╝░╚═╝░░╚═╝╚══════╝╚═════╝░\n\
+	$(RESET)"
+	
+
+# Not a target:
+objs/AFigure.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+objs/Parser.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+objs/Ambient.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+objs/Camera.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+rt: write_logo create_dirs objs/main.o objs/RayTracing.o objs/Parser.o objs/Ambient.o objs/Camera.o objs/AFigure.o objs/Lightning.o objs/Cone.o objs/Cylinder.o objs/Plane.o objs/Sphere.o objs/Color.o
+#  Implicit rule search has not been done.
+#  Last modified 2022-05-10 00:32:13
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/4=0%
+#  commands to execute (from `Makefile', line 70):
+	@echo "$(GREEN)\nObjects was created $(RESET)"
+	@$(CC) $(FLAGS) -I $(DIR_HEADERS) $(PATH_OBJS) -o $@
+	@echo "$(GREEN)Simply the best hard multi-d ray-tracing mother lover by peace dukes was compiled $(RESET)"
+	
+
+# files hash-table stats:
+# Load=23/1024=2%, Rehash=0, Collisions=3/61=5%
+# VPATH Search Paths
+
+# No `vpath' search paths.
+
+# No general (`VPATH' variable) search path.
+
+# # of strings in strcache: 1
+# # of strcache buffers: 1
+# strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
+# strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
+
+# Finished Make data base on Tue May 10 12:04:14 2022
+
+ 
