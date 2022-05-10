@@ -12,57 +12,51 @@ RayTracing::RayTracing(const std::vector<std::string>& pars_vector)
     std::stringstream   ss;
     std::string         key;
     this->FillMapTypes();
-    // std::cout << this->__v_ambient.size() << std::endl;
-    // std::cout << this->__v_camera.size() << std::endl;
-    // std::cout << this->__v_figure.size() << std::endl;
     for (auto &line: pars_vector)
     {
         ss.clear();
         ss.str("");
         ss << line;
         ss >> key;
-        this->__m[key](ss.str());
+        this->_m[key](ss.str());
     }
-    // std::cout << this->__v_ambient.size() << std::endl;
-    // std::cout << this->__v_camera.size() << std::endl;
-    // std::cout << this->__v_figure.size() << std::endl;
 }
 
 void RayTracing::FillMapTypes()
 {
-    this->__m["A"] = std::function<void(const std::string&)>([this](const std::string& params) \
+    this->_m["A"] = std::function<void(const std::string&)>([this](const std::string& params) \
         {
-            this->__v_ambient.push_back(std::move(std::make_unique<Ambient>(params)));
+            this->_v_ambient.push_back(std::move(std::make_unique<Ambient>(params)));
         });
     
-    this->__m["C"] = std::function<void(const std::string&)>([this](const std::string& params) \
+    this->_m["C"] = std::function<void(const std::string&)>([this](const std::string& params) \
         {
-            this->__v_camera.push_back(std::move(std::make_unique<Camera>(params)));
+            this->_v_camera.push_back(std::move(std::make_unique<Camera>(params)));
         });
         
-    this->__m["L"] = std::function<void(const std::string&)>([this](const std::string& params) \
+    this->_m["L"] = std::function<void(const std::string&)>([this](const std::string& params) \
         {
-            this->__v_ambient.push_back(std::move(std::make_unique<Lightning>(params)));
+            this->_v_ambient.push_back(std::move(std::make_unique<Lightning>(params)));
         });
 
-    this->__m["pl"] = std::function<void(const std::string&)>([this](const std::string& params) \
+    this->_m["pl"] = std::function<void(const std::string&)>([this](const std::string& params) \
         {
-            this->__v_figure.push_back(std::move(std::make_unique<Plane>(params)));
+            this->_v_figure.push_back(std::move(std::make_unique<Plane>(params)));
         });
     
-    this->__m["cy"] = std::function<void(const std::string&)>([this](const std::string& params) \
+    this->_m["cy"] = std::function<void(const std::string&)>([this](const std::string& params) \
         {
-            this->__v_figure.push_back(std::move(std::make_unique<Cylinder>(params)));
+            this->_v_figure.push_back(std::move(std::make_unique<Cylinder>(params)));
         });
     
-    this->__m["sp"] = std::function<void(const std::string&)>([this](const std::string& params) \
+    this->_m["sp"] = std::function<void(const std::string&)>([this](const std::string& params) \
         {
-            this->__v_figure.push_back(std::move(std::make_unique<Sphere>(params)));
+            this->_v_figure.push_back(std::move(std::make_unique<Sphere>(params)));
         });
 
-    this->__m["co"] = std::function<void(const std::string&)>([this](const std::string& params) \
+    this->_m["co"] = std::function<void(const std::string&)>([this](const std::string& params) \
         {
-            this->__v_figure.push_back(std::move(std::make_unique<Cone>(params)));
+            this->_v_figure.push_back(std::move(std::make_unique<Cone>(params)));
         });
 }
 

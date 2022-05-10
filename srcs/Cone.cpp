@@ -7,6 +7,6 @@
 
 #include "Cone.hpp"
 
-Cone::Cone(const std::string& params): AFigure(params) {}
+Cone::Cone(std::string params): AFigure(std::move(params)) {}
 
-Cone::~Cone() {}
+Cone::~Cone() = default;

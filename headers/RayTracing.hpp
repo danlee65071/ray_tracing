@@ -21,16 +21,13 @@
 class RayTracing
 {
     private:
-        std::vector<std::unique_ptr<Ambient> >                              __v_ambient;
-        std::vector<std::unique_ptr<Camera> >                               __v_camera;
-        std::vector<std::unique_ptr<AFigure> >                              __v_figure;
-        std::map<std::string, std::function<void(const std::string&)> >     __m;
+        std::vector<std::unique_ptr<Ambient> >                              _v_ambient;
+        std::vector<std::unique_ptr<Camera> >                               _v_camera;
+        std::vector<std::unique_ptr<AFigure> >                              _v_figure;
+        std::map<std::string, std::function<void(const std::string&)> >     _m;
 
         void FillMapTypes();
     public:
         explicit RayTracing(const std::vector<std::string>& pars_vector);
-        ~RayTracing() {}
-        // void setObject(std::unique_ptr<Camera> camera);
-        // void setObject(std::unique_ptr<Ambient> figure);
-
+        ~RayTracing() = default;
 };

@@ -7,11 +7,10 @@
 
 #include "Camera.hpp"
 
-Camera::Camera(const std::string& params): __params(params)
-{
+#include <utility>
 
-}
+Camera::Camera(std::string  params): _params(std::move(params)) {}
 
-Camera::~Camera() {}
+Camera::~Camera() = default;
 
-const std::string& Camera::getParams() const { return this->__params; }
+const std::string& Camera::getParams() const { return this->_params; }

@@ -7,32 +7,34 @@
 
 #include "Parser.hpp"
 
-Parser::Parser(const std::string& filename): __file_name(filename)
+#include <utility>
+
+Parser::Parser(std::string  filename): _file_name(std::move(filename))
 {
     this->CheckFileName();
     std::string line;
-    std::ifstream file(this->__file_name);
+    std::ifstream file(this->_file_name);
     if (file.is_open())
     {
         while (std::getline(file, line, '\n'))
         {
-            if (line.size() != 0 && this->CheckSpace(line) != line.size())
-                this->__v.push_back(line);
+            if (!line.empty() && Parser::CheckSpace(line) != line.size())
+                this->_v.push_back(line);
         }
         file.close();
     }
 }
 
-Parser::~Parser() {}
+Parser::~Parser() = default;
 
 void Parser::CheckFileName() const
 {
-    if (this->__file_name.size() <= 3 \
-        || this->__file_name.substr(this->__file_name.size() - 3, 3) != ".rt")
+    if (this->_file_name.size() <= 3 \
+ || this->_file_name.substr(this->_file_name.size() - 3, 3) != ".rt")
         throw BadFileName();
 }
 
-size_t Parser::CheckSpace(const std::string& line) const
+size_t Parser::CheckSpace(const std::string& line)
 {
     size_t i;
     for (i = 0; i < line.size(); ++i)
@@ -45,10 +47,10 @@ size_t Parser::CheckSpace(const std::string& line) const
 
 const std::vector<std::string>& Parser::get_vector() const
 {
-    return this->__v;
+    return this->_v;
 }
 
-const char* Parser::BadFileName::what() const throw()
+const char* Parser::BadFileName::what() const noexcept
 {
     return "Bad filename!\n";
 }

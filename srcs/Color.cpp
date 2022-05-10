@@ -7,18 +7,19 @@
 
 #include "Color.hpp"
 
-Color::Color(): __params("") {}
+#include <utility>
 
-Color::Color(const std::string& params): __params(params)
+
+Color::Color(std::string  params): _params(std::move(params))
 {
-    this->setColor(this->__params);
+    this->setColor(this->_params);
 }
 
-Color::~Color() {}
+Color::~Color() = default;
 
 const std::vector<GLfloat>& Color::getColor3fv() const
 {
-    return this->__v_color;
+    return this->_v_color;
 }
 
 void Color::setColor(const std::string& params)
@@ -26,34 +27,34 @@ void Color::setColor(const std::string& params)
     std::stringstream   ss;
     std::string         color_component;
 
-    this->__params = params;
-    ss << this->__params;
+    this->_params = params;
+    ss << this->_params;
     try
     {
         while(std::getline(ss, color_component, ','))
-            this->__v_color.push_back(std::stof(color_component) /255);
+            this->_v_color.push_back(std::stof(color_component) / 255);
     }
     catch(...)
     {
         throw InvalidParameter();
     }
-    if (this->__v_color.size() < 3)
+    if (this->_v_color.size() < 3)
         throw TooLowParameters();
-    else if (this->__v_color.size() > 3)
+    else if (this->_v_color.size() > 3)
         throw TooManyParameters();
 }
 
-const char* Color::TooManyParameters::what() const throw()
+ const char* Color::TooManyParameters::what() const noexcept
 {
     return "Too many parameters!";
 }
 
-const char* Color::TooLowParameters::what() const throw()
+const char* Color::TooLowParameters::what() const noexcept
 {
     return "Too low parameters!";
 }
 
-const char* Color::InvalidParameter::what() const throw()
+const char* Color::InvalidParameter::what() const noexcept
 {
     return "Invalid color parameter!";
 }

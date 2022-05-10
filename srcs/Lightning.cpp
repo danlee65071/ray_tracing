@@ -7,6 +7,4 @@
 
 #include "Lightning.hpp"
 
-Lightning::Lightning(const std::string& params): Ambient(params) {}
-
-Lightning::~Lightning() {}
+Lightning::Lightning(std::string params): Ambient(std::move(params)) {}

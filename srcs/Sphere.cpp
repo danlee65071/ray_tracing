@@ -7,6 +7,5 @@
 
 #include "Sphere.hpp"
 
-Sphere::Sphere(const std::string& params): AFigure(params) {}
+Sphere::Sphere(std::string params): AFigure(std::move(params)) {}
 
-Sphere::~Sphere() {}

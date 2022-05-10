@@ -7,6 +7,6 @@
 
 #include "Cylinder.hpp"
 
-Cylinder::Cylinder(const std::string& params): AFigure(params) {}
+Cylinder::Cylinder(std::string params): AFigure(std::move(params)) {}
 
-Cylinder::~Cylinder() {}
+Cylinder::~Cylinder() = default;

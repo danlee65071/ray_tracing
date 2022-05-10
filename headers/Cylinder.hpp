@@ -13,6 +13,6 @@ class Cylinder: public AFigure
 {
     private:
     public:
-        Cylinder(const std::string& params);
+        explicit Cylinder(std::string params);
         ~Cylinder() override;
 };

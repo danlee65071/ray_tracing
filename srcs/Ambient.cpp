@@ -7,31 +7,32 @@
 
 #include "Ambient.hpp"
 
-Ambient::Ambient(const std::string& params): __params(params), __intensive(0)
+#include <utility>
+
+Ambient::Ambient(std::string  params): _params(std::move(params)), _intensive(0)
 {
     std::stringstream   ss;
     std::string         key;
     std::string         str_color;
 
-    ss << this->__params;
+    ss << this->_params;
     ss >> key;
-    ss >> this->__intensive;
+    ss >> this->_intensive;
     ss >> str_color;
-    std::cout << str_color << std::endl;
-    this->__color.setColor(str_color);
+    this->_color.setColor(str_color);
 }
 
 const std::string& Ambient::getParams() const
 {
-    return this->__params;
+    return this->_params;
 }
 
 GLfloat Ambient::getIntensive() const
 {
-    return this->__intensive;
+    return this->_intensive;
 }
 
 const Color& Ambient::getColor() const
 {
-    return this->__color;
+    return this->_color;
 }

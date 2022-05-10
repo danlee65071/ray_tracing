@@ -13,10 +13,10 @@
 class Camera
 {
     private:
-        std::string __params;
+        std::string _params;
     public:
-        Camera(const std::string& params);
+        explicit Camera(std::string  params);
         ~Camera();
 
-        const std::string& getParams() const;
+        [[nodiscard]] const std::string& getParams() const;
 };

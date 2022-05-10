@@ -17,20 +17,20 @@
 class Parser
 {
     private:
-        std::string                     __file_name;
-        std::vector<std::string>        __v;
+        std::string                     _file_name;
+        std::vector<std::string>        _v;
 
         void CheckFileName() const;
 
-        size_t CheckSpace(const std::string& line) const;
+        static size_t CheckSpace(const std::string& line) ;
     public:
-        explicit Parser(const std::string& filename);
+        explicit Parser(std::string  filename);
         ~Parser();
 
-        const std::vector<std::string>& get_vector() const;
+        [[nodiscard]] const std::vector<std::string>& get_vector() const;
 
         class BadFileName: public std::exception
         {
-            virtual const char* what() const throw();
+            [[nodiscard]] const char* what() const noexcept override;
         };
 };

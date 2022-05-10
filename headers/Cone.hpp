@@ -13,6 +13,6 @@ class Cone: public AFigure
 {
     private:
     public:
-        Cone(const std::string& params);
+        explicit Cone(std::string params);
         ~Cone() override;
 };

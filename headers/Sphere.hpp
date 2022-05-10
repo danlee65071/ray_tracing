@@ -13,6 +13,6 @@ class Sphere: public AFigure
 {
     private:
     public:
-        Sphere(const std::string& params);
-        ~Sphere() override;
+        explicit Sphere(std::string params);
+        ~Sphere() override = default;
 };

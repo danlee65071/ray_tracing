@@ -7,6 +7,5 @@
 
 #include "Plane.hpp"
 
-Plane::Plane(const std::string& params): AFigure(params) {}
+Plane::Plane(std::string params): AFigure(std::move(params)) {}
 
-Plane::~Plane() {}

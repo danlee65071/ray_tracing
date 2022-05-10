@@ -7,8 +7,10 @@
 
 #include "AFigure.hpp"
 
-AFigure::AFigure(const std::string& params): __params(params) {}
+#include <utility>
 
-AFigure::~AFigure() {}
+AFigure::AFigure(std::string  params): _params(std::move(params)) {}
 
-const std::string& AFigure::getParams() const { return this->__params; }
+AFigure::~AFigure() = default;
+
+const std::string& AFigure::getParams() const { return this->_params; }

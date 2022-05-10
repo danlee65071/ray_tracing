@@ -13,6 +13,6 @@ class Plane: public AFigure
 {
     private:
     public:
-        Plane(const std::string& params);
-        ~Plane() override;
+        explicit Plane(std::string params);
+        ~Plane() override = default;
 };

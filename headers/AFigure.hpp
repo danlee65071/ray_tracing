@@ -13,10 +13,10 @@
 class AFigure
 {
     private:
-        std::string __params;
+        std::string _params;
     public:
-        AFigure(const std::string& params);
+        explicit AFigure(std::string  params);
         virtual ~AFigure() = 0;
         
-        const std::string& getParams() const; 
+        [[nodiscard]] const std::string& getParams() const;
 };

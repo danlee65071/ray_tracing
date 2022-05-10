@@ -14,6 +14,6 @@ class Lightning: public Ambient
     private:
         
     public:
-        Lightning(const std::string& params);
-        ~Lightning();
+        explicit Lightning(std::string params);
+		~Lightning() override = default;
 };
