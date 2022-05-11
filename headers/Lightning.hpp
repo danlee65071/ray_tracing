@@ -8,13 +8,17 @@
 #pragma once
 
 #include "Ambient.hpp"
-#include "Coordinate.hpp"
+#include "utils.hpp"
 
 class Lightning: public Ambient
 {
-    private:
-        Coordinate _coordinate;
-    public:
-        explicit Lightning(const std::string& params);
-		~Lightning() override = default;
+private:
+    std::string _str_coordinate;
+	Coordinate  _coordinate;
+
+	void coordinateParse();
+	void paramsParse() override;
+public:
+    explicit Lightning(std::string  params);
+    ~Lightning() override = default;
 };

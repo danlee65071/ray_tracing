@@ -7,12 +7,7 @@
 
 #pragma once
 
-#include <iostream>
-#include <string>
-#include <fstream>
-#include <vector>
-#include <set>
-#include <cctype>
+#include "utils.hpp"
 
 class Parser
 {
@@ -29,8 +24,27 @@ class Parser
 
         [[nodiscard]] const std::vector<std::string>& get_vector() const;
 
+        static void parseVector3f(const std::string& params, std::vector<GLfloat>& v);
+
         class BadFileName: public std::exception
         {
+            [[nodiscard]] const char* what() const noexcept override;
+        };
+        class TooManyParameters: public std::exception
+        {
+        public:
+            [[nodiscard]] const char* what() const noexcept override;
+        };
+
+        class TooLowParameters: public std::exception
+        {
+        public:
+            [[nodiscard]] const char* what() const noexcept override;
+        };
+
+        class InvalidParameter: public std::exception
+        {
+        public:
             [[nodiscard]] const char* what() const noexcept override;
         };
 };

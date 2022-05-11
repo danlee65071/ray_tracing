@@ -17,4 +17,9 @@
 #include <memory>
 #include <functional>
 #include <sstream>
+#include <utility>
+#include <fstream>
+#include <any>
 #include "Color.hpp"
+#include "Coordinate.hpp"
+#include "Parser.hpp"

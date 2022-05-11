@@ -10,16 +10,13 @@
 #include <utility>
 
 Ambient::Ambient(std::string  params): _params(std::move(params)), _intensive(0)
-{
-    std::stringstream   ss;
-    std::string         key;
-    std::string         str_color;
+{}
 
-    ss << this->_params;
-    ss >> key;
-    ss >> this->_intensive;
-    ss >> str_color;
-    this->_color.setColor(str_color);
+void Ambient::paramsParse()
+{
+	this->keyParse();
+	this->intensiveParse();
+	this->colorParse();
 }
 
 const std::string& Ambient::getParams() const
@@ -35,4 +32,29 @@ GLfloat Ambient::getIntensive() const
 const Color& Ambient::getColor() const
 {
     return this->_color;
+}
+
+void Ambient::keyParse()
+{
+    this->ssClear();
+    this->_ss << this->_params;
+    this->_ss >> this->_key;
+}
+
+void Ambient::colorParse()
+{
+	this->ssClear();
+    this->_ss >> this->_str_color;
+    this->_color.setColor(this->_str_color);
+}
+
+void Ambient::intensiveParse()
+{
+     this->_ss >> this->_intensive;
+}
+
+void Ambient::ssClear()
+{
+	this->_ss.clear();
+	this->_ss.str() = "";
 }

@@ -15,24 +15,8 @@ private:
 	std::vector<GLfloat> 	_v_coordinate;
 	std::string				_params;
 public:
+    Coordinate() = default;
 	explicit Coordinate(std::string params);
 	~Coordinate() = default;
 	void setCoordinate(const std::string& params);
-	class TooManyParameters: public std::exception
-	{
-	public:
-		[[nodiscard]] const char* what() const noexcept override;
-	};
-
-	class TooLowParameters: public std::exception
-	{
-	public:
-		[[nodiscard]] const char* what() const noexcept override;
-	};
-
-	class InvalidParameter: public std::exception
-	{
-	public:
-		[[nodiscard]] const char* what() const noexcept override;
-	};
 };

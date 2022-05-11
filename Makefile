@@ -55,7 +55,7 @@ PATH_OBJS = $(addprefix $(DIR_OBJS)/, $(OBJS))
 CC = c++
 
 # флаги
-FLAGS =  -g -std=c++17
+FLAGS = -Wall -Werror -Wextra -g -std=c++17
 
 # команда удаления
 RM = rm -rf
@@ -122,7 +122,7 @@ create_dirs:
 #Для удобства объектные файлы были помещены в отдеьную директорию
 #Объектные файлы зависят от си файлов
 #Ещё есть зависимость от хэдеров. Это нужно, чтобы при измении хэдера проект перекомпилировался
-$(DIR_OBJS)/%.o: $(DIR_SRCS)/%.cpp $(PATH_HEADERS)
+$(DIR_OBJS)/%.o: $(DIR_SRCS)/%.cpp $(PATH_HEADERS) Makefile
 	@$(CC) $(FLAGS) -I $(DIR_HEADERS) -c $< -o $@
 	@echo "$(GREEN).$(RESET)\c"
 

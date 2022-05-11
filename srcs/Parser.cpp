@@ -45,6 +45,27 @@ size_t Parser::CheckSpace(const std::string& line)
     return i;
 }
 
+void Parser::parseVector3f(const std::string& params, std::vector<GLfloat>& v)
+{
+    std::stringstream   ss;
+    std::string         coordinate_component;
+
+    ss << params;
+    try
+    {
+        while(std::getline(ss, coordinate_component, ','))
+            v.push_back(std::stof(coordinate_component));
+    }
+    catch(...)
+    {
+        throw InvalidParameter();
+    }
+    if (v.size() < 3)
+        throw TooLowParameters();
+    else if (v.size() > 3)
+        throw TooManyParameters();
+}
+
 const std::vector<std::string>& Parser::get_vector() const
 {
     return this->_v;
@@ -52,5 +73,20 @@ const std::vector<std::string>& Parser::get_vector() const
 
 const char* Parser::BadFileName::what() const noexcept
 {
-    return "Bad filename!\n";
+    return "Bad filename!";
 }
+
+ const char* Parser::TooManyParameters::what() const noexcept
+ {
+     return "Too many parameters!";
+ }
+
+ const char* Parser::TooLowParameters::what() const noexcept
+ {
+     return "Too low parameters!";
+ }
+
+ const char* Parser::InvalidParameter::what() const noexcept
+ {
+     return "Invalid coordinate parameter!";
+ }

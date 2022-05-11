@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="rt" targetName="re" />
+      <config projectName="rt" targetName="rt" />
+      <config projectName="rt" targetName="fclean" />
+      <config projectName="rt" targetName="create_dirs" />
+      <config projectName="rt" targetName="write_logo" />
+      <config projectName="rt" targetName="all" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7d6d801d-5ae3-4c1b-bd7b-895e82a4385c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ray_tracing.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/headers/Ambient.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/headers/Ambient.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/headers/Coordinate.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/headers/Coordinate.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/headers/Lightning.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/headers/Lightning.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/headers/Parser.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/headers/Parser.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/headers/utils.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/headers/utils.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/objs/AFigure.o" beforeDir="false" afterPath="$PROJECT_DIR$/objs/AFigure.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/objs/Ambient.o" beforeDir="false" afterPath="$PROJECT_DIR$/objs/Ambient.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/objs/Camera.o" beforeDir="false" afterPath="$PROJECT_DIR$/objs/Camera.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/objs/Color.o" beforeDir="false" afterPath="$PROJECT_DIR$/objs/Color.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/objs/Cone.o" beforeDir="false" afterPath="$PROJECT_DIR$/objs/Cone.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/objs/Coordinate.o" beforeDir="false" afterPath="$PROJECT_DIR$/objs/Coordinate.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/objs/Cylinder.o" beforeDir="false" afterPath="$PROJECT_DIR$/objs/Cylinder.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/objs/Lightning.o" beforeDir="false" afterPath="$PROJECT_DIR$/objs/Lightning.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/objs/Parser.o" beforeDir="false" afterPath="$PROJECT_DIR$/objs/Parser.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/objs/Plane.o" beforeDir="false" afterPath="$PROJECT_DIR$/objs/Plane.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/objs/RayTracing.o" beforeDir="false" afterPath="$PROJECT_DIR$/objs/RayTracing.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/objs/Sphere.o" beforeDir="false" afterPath="$PROJECT_DIR$/objs/Sphere.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/objs/main.o" beforeDir="false" afterPath="$PROJECT_DIR$/objs/main.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rt" beforeDir="false" afterPath="$PROJECT_DIR$/rt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/Ambient.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/Ambient.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/Color.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/Color.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/Coordinate.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/Coordinate.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/Lightning.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/Lightning.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/Parser.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/Parser.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/RayTracing.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/RayTracing.cpp" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MakefileLocalSettings">
+    <option name="availableProjects">
+      <map>
+        <entry>
+          <key>
+            <ExternalProjectPojo>
+              <option name="name" value="rt" />
+              <option name="path" value="$PROJECT_DIR$" />
+            </ExternalProjectPojo>
+          </key>
+          <value>
+            <list>
+              <ExternalProjectPojo>
+                <option name="name" value="rt" />
+                <option name="path" value="$PROJECT_DIR$" />
+              </ExternalProjectPojo>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="projectSyncType">
+      <map>
+        <entry key="$PROJECT_DIR$" value="RE_IMPORT" />
+      </map>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectApplicationVersion">
+    <option name="ide" value="CLion" />
+    <option name="majorVersion" value="2021" />
+    <option name="minorVersion" value="3" />
+  </component>
+  <component name="ProjectId" id="291mGUyKO67fIlWDrGCtpTO43q6" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.first.check.clang-format" value="false" />
+    <property name="cidr.known.project.marker" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.build" />
+  </component>
+  <component name="RunManager" selected="Makefile Application.all">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="all" type="CLionNativeAppRunConfigurationType" PROGRAM_PARAMS="scene/hi.rt" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="rt" TARGET_NAME="all" CONFIG_NAME="all" version="1" RUN_PATH="$PROJECT_DIR$/rt">
+      <method v="2">
+        <option name="CLION.COMPOUND.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="create_dirs" type="CLionNativeAppRunConfigurationType" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="rt" TARGET_NAME="create_dirs" CONFIG_NAME="create_dirs" version="1">
+      <method v="2">
+        <option name="CLION.COMPOUND.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="fclean" type="CLionNativeAppRunConfigurationType" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="rt" TARGET_NAME="fclean" CONFIG_NAME="fclean" version="1">
+      <method v="2">
+        <option name="CLION.COMPOUND.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="re" type="CLionNativeAppRunConfigurationType" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="rt" TARGET_NAME="re" CONFIG_NAME="re" version="1">
+      <method v="2">
+        <option name="CLION.COMPOUND.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="rt" type="CLionNativeAppRunConfigurationType" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="rt" TARGET_NAME="rt" CONFIG_NAME="rt" version="1">
+      <method v="2">
+        <option name="CLION.COMPOUND.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="write_logo" type="CLionNativeAppRunConfigurationType" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="rt" TARGET_NAME="write_logo" CONFIG_NAME="write_logo" version="1">
+      <method v="2">
+        <option name="CLION.COMPOUND.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Makefile Application.all" />
+      <item itemvalue="Makefile Application.create_dirs" />
+      <item itemvalue="Makefile Application.fclean" />
+      <item itemvalue="Makefile Application.re" />
+      <item itemvalue="Makefile Application.write_logo" />
+      <item itemvalue="Makefile Application.rt" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7d6d801d-5ae3-4c1b-bd7b-895e82a4385c" name="Changes" comment="" />
+      <created>1652288870128</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1652288870128</updated>
+      <workItem from="1652288871367" duration="4728000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
