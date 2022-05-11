@@ -26,13 +26,17 @@ void Color::setColor(const std::string& params)
 {
     std::stringstream   ss;
     std::string         color_component;
+	auto				check = [](GLfloat param) -> GLfloat
+	{
+		return (param < 0) ? (0) : ((param > 1) ? (1) : (param));
+	};
 
     this->_params = params;
     ss << this->_params;
     try
     {
         while(std::getline(ss, color_component, ','))
-            this->_v_color.push_back(std::stof(color_component) / 255);
+            this->_v_color.push_back(check(std::stof(color_component) / 255));
     }
     catch(...)
     {

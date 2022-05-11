@@ -21,7 +21,8 @@ SRCS = 	main.cpp \
 		Cylinder.cpp \
 		Plane.cpp \
 		Sphere.cpp \
-		Color.cpp
+		Color.cpp \
+		Coordinate.cpp
 
 PATH_SRCS = $(addprefix $(DIR_SRCS)/, $(SRCS))
 
@@ -40,7 +41,8 @@ HEADERS = 	RayTracing.hpp \
 			Plane.hpp \
 			Sphere.hpp \
 			utils.hpp \
-			Color.hpp
+			Color.hpp \
+			Coordinate.hpp
 
 PATH_HEADERS = $(addprefix $(DIR_HEADERS)/, $(HEADERS))
 
