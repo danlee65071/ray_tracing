@@ -9,10 +9,10 @@
 
 Coordinate::Coordinate(std::string params) : _params(std::move(params))
 {
-    Parser::parseVector3f(this->_params, this->_v_coordinate);
+	Parser::parseVector(this->_params, this->_v_coordinate);
 }
 
 void Coordinate::setCoordinate(const std::string &params)
 {
-	Parser::parseVector3f(params, this->_v_coordinate);
+	Parser::parseVector(params, this->_v_coordinate);
 }

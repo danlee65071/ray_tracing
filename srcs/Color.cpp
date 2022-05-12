@@ -12,7 +12,7 @@
 
 Color::Color(std::string  params): _params(std::move(params))
 {
-    Parser::parseVector3f(this->_params, this->_v_color);
+	Parser::parseVector(this->_params, this->_v_color);
 }
 
 Color::~Color() = default;
@@ -28,7 +28,7 @@ void Color::setColor(const std::string& params)
 	{
 		return (param < 0) ? (0) : ((param > 1) ? (1) : (param));
 	};
-    Parser::parseVector3f(params, this->_v_color);
+	Parser::parseVector(params, this->_v_color);
     for (auto& el: this->_v_color)
         check(el);
 }

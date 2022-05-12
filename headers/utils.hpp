@@ -20,6 +20,9 @@
 #include <utility>
 #include <fstream>
 #include <any>
+#include <algorithm>
+#include <cmath>
 #include "Color.hpp"
 #include "Coordinate.hpp"
 #include "Parser.hpp"
+#include "Vector3f.hpp"

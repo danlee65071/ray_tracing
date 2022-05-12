@@ -24,7 +24,7 @@ class Parser
 
         [[nodiscard]] const std::vector<std::string>& get_vector() const noexcept;
 
-        static void parseVector3f(const std::string& params, std::vector<GLfloat>& v);
+        static void parseVector(const std::string& params, std::vector<GLfloat>& v);
 
 		static void ssClear(std::stringstream& ss);
 

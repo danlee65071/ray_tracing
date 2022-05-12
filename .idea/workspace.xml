@@ -20,16 +20,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7e4b4ede-d3a3-44eb-b4a0-42dd72811c08" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/headers/Vector3f.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/srcs/Vector3f.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/headers/Ambient.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/headers/Ambient.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/headers/Lightning.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/headers/Lightning.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/headers/Camera.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/headers/Camera.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/headers/Parser.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/headers/Parser.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/headers/RayTracing.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/headers/RayTracing.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs/Ambient.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/Ambient.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs/Lightning.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/Lightning.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/headers/utils.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/headers/utils.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/Color.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/Color.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/Coordinate.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/Coordinate.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/srcs/Parser.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/Parser.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs/RayTracing.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/RayTracing.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,6 +96,11 @@
     <property name="cf.first.check.clang-format" value="false" />
     <property name="cidr.known.project.marker" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/srcs" />
+    </key>
+  </component>
   <component name="RunManager" selected="Makefile Application.all">
     <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
@@ -148,27 +154,23 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1652339768457</updated>
-      <workItem from="1652339770121" duration="1800000" />
+      <workItem from="1652339770121" duration="7813000" />
     </task>
+    <task id="LOCAL-00001" summary="add checks for object">
+      <created>1652341773992</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1652341773992</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/srcs/Parser.cpp</url>
-          <line>50</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/srcs/RayTracing.cpp</url>
-          <line>19</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add checks for object" />
+    <option name="LAST_COMMIT_MESSAGE" value="add checks for object" />
   </component>
 </project>

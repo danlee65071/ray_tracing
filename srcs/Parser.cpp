@@ -39,14 +39,12 @@ size_t Parser::CheckSpace(const std::string& line)
 {
     size_t i;
     for (i = 0; i < line.size(); ++i)
-    {
         if (!isspace(line[i]))
             return i;
-    }
     return i;
 }
 
-void Parser::parseVector3f(const std::string& params, std::vector<GLfloat>& v)
+void Parser::parseVector(const std::string& params, std::vector<GLfloat>& v)
 {
     std::stringstream   ss;
     std::string         coordinate_component;
@@ -54,6 +52,7 @@ void Parser::parseVector3f(const std::string& params, std::vector<GLfloat>& v)
     ss << params;
     try
     {
+		v.clear();
         while(std::getline(ss, coordinate_component, ','))
             v.push_back(std::stof(coordinate_component));
     }

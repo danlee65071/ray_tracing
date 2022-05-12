@@ -7,13 +7,13 @@
 
 #pragma once
 
-#include <iostream>
-#include <string>
+#include "utils.hpp"
 
 class Camera
 {
     private:
         std::string _params;
+		Coordinate	_coordiante;
     public:
         explicit Camera(std::string  params);
         ~Camera();
