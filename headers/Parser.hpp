@@ -22,14 +22,20 @@ class Parser
         explicit Parser(std::string  filename);
         ~Parser();
 
-        [[nodiscard]] const std::vector<std::string>& get_vector() const;
+        [[nodiscard]] const std::vector<std::string>& get_vector() const noexcept;
 
         static void parseVector3f(const std::string& params, std::vector<GLfloat>& v);
+
+		static void ssClear(std::stringstream& ss);
 
         class BadFileName: public std::exception
         {
             [[nodiscard]] const char* what() const noexcept override;
         };
+		class BadFile: public std::exception
+		{
+			[[nodiscard]] const char* what() const noexcept override;
+		};
         class TooManyParameters: public std::exception
         {
         public:

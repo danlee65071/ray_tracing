@@ -7,11 +7,12 @@
 
 #include "Lightning.hpp"
 
-Lightning::Lightning(std::string params): Ambient(std::move(params)) {}
+Lightning::Lightning(std::string params): Ambient(std::move(params))
+{}
 
 void Lightning::coordinateParse()
 {
-	this->ssClear();
+	Parser::ssClear(this->_ss);
 	this->_ss >> this->_str_coordinate;
 	this->_coordinate.setCoordinate(this->_str_coordinate);
 }

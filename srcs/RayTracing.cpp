@@ -14,11 +14,10 @@ RayTracing::RayTracing(const std::vector<std::string>& pars_vector)
     this->FillMapTypes();
     for (auto &line: pars_vector)
     {
-        ss.clear();
-        ss.str("");
+        Parser::ssClear(ss);
         ss << line;
         ss >> key;
-        this->_m[key](ss.str());
+		!this->_m[key] ? throw WrongObject() : this->_m[key](ss.str());
     }
 }
 
@@ -60,3 +59,7 @@ void RayTracing::FillMapTypes()
         });
 }
 
+ const char *RayTracing::WrongObject::what() const noexcept
+ {
+	 return "Wrong object!";
+ }

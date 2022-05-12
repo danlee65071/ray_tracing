@@ -14,15 +14,16 @@ Parser::Parser(std::string  filename): _file_name(std::move(filename))
     this->CheckFileName();
     std::string line;
     std::ifstream file(this->_file_name);
-    if (file.is_open())
-    {
-        while (std::getline(file, line, '\n'))
-        {
-            if (!line.empty() && Parser::CheckSpace(line) != line.size())
-                this->_v.push_back(line);
-        }
-        file.close();
-    }
+	if (file.is_open())
+	{
+		while (std::getline(file, line, '\n'))
+		{
+			if (!line.empty() && Parser::CheckSpace(line) != line.size())
+				this->_v.push_back(line);
+		}
+		file.close();
+	}
+	else { throw BadFile(); }
 }
 
 Parser::~Parser() = default;
@@ -66,9 +67,15 @@ void Parser::parseVector3f(const std::string& params, std::vector<GLfloat>& v)
         throw TooManyParameters();
 }
 
-const std::vector<std::string>& Parser::get_vector() const
+const std::vector<std::string>& Parser::get_vector() const noexcept
 {
     return this->_v;
+}
+
+void Parser::ssClear(std::stringstream& ss)
+{
+	 ss.clear();
+	 ss.str("");
 }
 
 const char* Parser::BadFileName::what() const noexcept
@@ -89,4 +96,9 @@ const char* Parser::BadFileName::what() const noexcept
  const char* Parser::InvalidParameter::what() const noexcept
  {
      return "Invalid coordinate parameter!";
+ }
+
+ const char *Parser::BadFile::what() const noexcept
+ {
+	 return "Bad file!";
  }

@@ -30,4 +30,10 @@ class RayTracing
     public:
         explicit RayTracing(const std::vector<std::string>& pars_vector);
         ~RayTracing() = default;
+
+		class WrongObject: public std::exception
+		{
+		public:
+			[[nodiscard]] const char* what() const noexcept override;
+		};
 };

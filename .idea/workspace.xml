@@ -19,34 +19,14 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7d6d801d-5ae3-4c1b-bd7b-895e82a4385c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ray_tracing.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+    <list default="true" id="7e4b4ede-d3a3-44eb-b4a0-42dd72811c08" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/headers/Ambient.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/headers/Ambient.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/headers/Coordinate.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/headers/Coordinate.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/headers/Lightning.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/headers/Lightning.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/headers/Parser.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/headers/Parser.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/headers/utils.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/headers/utils.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/objs/AFigure.o" beforeDir="false" afterPath="$PROJECT_DIR$/objs/AFigure.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/objs/Ambient.o" beforeDir="false" afterPath="$PROJECT_DIR$/objs/Ambient.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/objs/Camera.o" beforeDir="false" afterPath="$PROJECT_DIR$/objs/Camera.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/objs/Color.o" beforeDir="false" afterPath="$PROJECT_DIR$/objs/Color.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/objs/Cone.o" beforeDir="false" afterPath="$PROJECT_DIR$/objs/Cone.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/objs/Coordinate.o" beforeDir="false" afterPath="$PROJECT_DIR$/objs/Coordinate.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/objs/Cylinder.o" beforeDir="false" afterPath="$PROJECT_DIR$/objs/Cylinder.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/objs/Lightning.o" beforeDir="false" afterPath="$PROJECT_DIR$/objs/Lightning.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/objs/Parser.o" beforeDir="false" afterPath="$PROJECT_DIR$/objs/Parser.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/objs/Plane.o" beforeDir="false" afterPath="$PROJECT_DIR$/objs/Plane.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/objs/RayTracing.o" beforeDir="false" afterPath="$PROJECT_DIR$/objs/RayTracing.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/objs/Sphere.o" beforeDir="false" afterPath="$PROJECT_DIR$/objs/Sphere.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/objs/main.o" beforeDir="false" afterPath="$PROJECT_DIR$/objs/main.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rt" beforeDir="false" afterPath="$PROJECT_DIR$/rt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/headers/RayTracing.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/headers/RayTracing.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/srcs/Ambient.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/Ambient.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs/Color.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/Color.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs/Coordinate.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/Coordinate.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/srcs/Lightning.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/Lightning.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/srcs/Parser.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/Parser.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/srcs/RayTracing.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/RayTracing.cpp" afterDir="false" />
@@ -102,7 +82,7 @@
     <option name="majorVersion" value="2021" />
     <option name="minorVersion" value="3" />
   </component>
-  <component name="ProjectId" id="291mGUyKO67fIlWDrGCtpTO43q6" />
+  <component name="ProjectId" id="293RQawyKkDaPEGA3QDwcxmEIre" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -111,12 +91,9 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
     <property name="cidr.known.project.marker" value="true" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.build" />
   </component>
   <component name="RunManager" selected="Makefile Application.all">
     <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
@@ -124,7 +101,7 @@
         <option name="CLION.EXTERNAL.BUILD" enabled="true" />
       </method>
     </configuration>
-    <configuration name="all" type="CLionNativeAppRunConfigurationType" PROGRAM_PARAMS="scene/hi.rt" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="rt" TARGET_NAME="all" CONFIG_NAME="all" version="1" RUN_PATH="$PROJECT_DIR$/rt">
+    <configuration name="all" type="CLionNativeAppRunConfigurationType" PROGRAM_PARAMS="scenes/hi.rt" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="rt" TARGET_NAME="all" CONFIG_NAME="all" version="1" RUN_PATH="$PROJECT_DIR$/rt">
       <method v="2">
         <option name="CLION.COMPOUND.BUILD" enabled="true" />
       </method>
@@ -166,16 +143,32 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="7d6d801d-5ae3-4c1b-bd7b-895e82a4385c" name="Changes" comment="" />
-      <created>1652288870128</created>
+      <changelist id="7e4b4ede-d3a3-44eb-b4a0-42dd72811c08" name="Changes" comment="" />
+      <created>1652339768457</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1652288870128</updated>
-      <workItem from="1652288871367" duration="4728000" />
+      <updated>1652339768457</updated>
+      <workItem from="1652339770121" duration="1800000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/srcs/Parser.cpp</url>
+          <line>50</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/srcs/RayTracing.cpp</url>
+          <line>19</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

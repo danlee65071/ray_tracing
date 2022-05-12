@@ -9,7 +9,7 @@
 
 #include <utility>
 
-Ambient::Ambient(std::string  params): _params(std::move(params)), _intensive(0)
+Ambient::Ambient(std::string  params): _params(std::move(params))
 {}
 
 void Ambient::paramsParse()
@@ -36,14 +36,14 @@ const Color& Ambient::getColor() const
 
 void Ambient::keyParse()
 {
-    this->ssClear();
+    Parser::ssClear(this->_ss);
     this->_ss << this->_params;
     this->_ss >> this->_key;
 }
 
 void Ambient::colorParse()
 {
-	this->ssClear();
+	Parser::ssClear(this->_ss);
     this->_ss >> this->_str_color;
     this->_color.setColor(this->_str_color);
 }
@@ -51,10 +51,4 @@ void Ambient::colorParse()
 void Ambient::intensiveParse()
 {
      this->_ss >> this->_intensive;
-}
-
-void Ambient::ssClear()
-{
-	this->_ss.clear();
-	this->_ss.str() = "";
 }
