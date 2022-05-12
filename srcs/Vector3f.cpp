@@ -85,6 +85,13 @@ Vector3f Vector3f::cross_product(Vector3f &vec)
 	return res;
 }
 
+void Vector3f::setVector3f(const std::string& params)
+{
+	this->_params = params;
+	Parser::parseVector(this->_params, this->_v3f);
+	this->len();
+}
+
 const char* Vector3f::OutOfRange::what() const noexcept
 {
 	return "Index out of range vector!";

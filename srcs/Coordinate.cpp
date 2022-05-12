@@ -16,3 +16,8 @@ void Coordinate::setCoordinate(const std::string &params)
 {
 	Parser::parseVector(params, this->_v_coordinate);
 }
+
+const std::vector<GLfloat>& Coordinate::getCoordinateVector() const
+{
+	return this->_v_coordinate;
+}

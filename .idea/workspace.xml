@@ -20,16 +20,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7e4b4ede-d3a3-44eb-b4a0-42dd72811c08" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/headers/Vector3f.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/srcs/Vector3f.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/headers/AFigure.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/headers/AFigure.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/headers/Ambient.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/headers/Ambient.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/headers/Camera.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/headers/Camera.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/headers/Parser.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/headers/Parser.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/headers/utils.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/headers/utils.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs/Color.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/Color.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/headers/Coordinate.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/headers/Coordinate.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/headers/Lightning.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/headers/Lightning.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/headers/Vector3f.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/headers/Vector3f.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/AFigure.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/AFigure.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/Ambient.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/Ambient.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/Camera.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/Camera.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/srcs/Coordinate.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/Coordinate.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/Cylinder.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/Cylinder.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/Lightning.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/Lightning.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/srcs/Parser.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/Parser.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/Plane.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/Plane.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/RayTracing.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/RayTracing.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/Sphere.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/Sphere.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/Vector3f.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/Vector3f.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/srcs/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -95,6 +103,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
     <property name="cidr.known.project.marker" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -154,7 +163,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1652339768457</updated>
-      <workItem from="1652339770121" duration="7813000" />
+      <workItem from="1652339770121" duration="15040000" />
     </task>
     <task id="LOCAL-00001" summary="add checks for object">
       <created>1652341773992</created>
@@ -163,7 +172,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652341773992</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add vector class">
+      <created>1652351783049</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1652351783049</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -171,6 +187,18 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add checks for object" />
-    <option name="LAST_COMMIT_MESSAGE" value="add checks for object" />
+    <MESSAGE value="add vector class" />
+    <option name="LAST_COMMIT_MESSAGE" value="add vector class" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/srcs/main.cpp</url>
+          <line>7</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

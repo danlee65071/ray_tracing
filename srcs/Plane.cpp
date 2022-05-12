@@ -7,5 +7,25 @@
 
 #include "Plane.hpp"
 
-Plane::Plane(std::string params): AFigure(std::move(params)) {}
+Plane::Plane(std::string params): AFigure(std::move(params))
+{
+	this->keyParse();
+	this->centerParse();
+	this->directionParse();
+	this->colorParse();
 
+	std::cout << "key: " << this->_key << std::endl;
+	std::cout << "center: ";
+	for (auto& el: this->_center.getCoordinateVector())
+		std::cout << el << " ";
+	std::cout << std::endl;
+	std::cout << "direction: ";
+	for (auto& el: this->_direction.getV3f())
+		std::cout << el << " ";
+	std::cout << std::endl;
+	std::cout << "color: ";
+	for (auto& el: this->_color.getColor3fv())
+		std::cout << el << " ";
+	std::cout << std::endl;
+	std::cout << std::endl;
+}

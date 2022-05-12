@@ -7,10 +7,55 @@
 
 #include "Camera.hpp"
 
-#include <utility>
+Camera::Camera(std::string  params): _params(std::move(params))
+{
+	this->paramsParse();
 
-Camera::Camera(std::string  params): _params(std::move(params)) {}
+	std::cout << "key: " << this->_key << std::endl;
+	std::cout << "coordinate: ";
+	for (auto& el: this->_coordinate.getCoordinateVector())
+		std::cout << el << " ";
+	std::cout << std::endl;
+	std::cout << "direction: ";
+	for (auto& el: this->_direction.getV3f())
+		std::cout << el << " ";
+	std::cout << std::endl;
+	std::cout << "fov: " << this->_fov << std::endl;
+	std::cout << std::endl;
+}
 
 Camera::~Camera() = default;
 
 const std::string& Camera::getParams() const { return this->_params; }
+
+void Camera::paramsParse()
+{
+	this->keyParse();
+	this->coordinateParse();
+	this->directionParse();
+	this->fovParse();
+}
+
+void Camera::keyParse()
+{
+	Parser::ssClear(this->_ss);
+	this->_ss << this->_params;
+	this->_ss >> this->_key;
+}
+
+void Camera::coordinateParse()
+{
+	this->_ss >> this->_str_coordinate;
+	this->_coordinate.setCoordinate(this->_str_coordinate);
+}
+
+void Camera::directionParse()
+{
+	this->_ss >> this->_str_direction;
+	this->_direction.setVector3f(this->_str_direction);
+}
+
+void Camera::fovParse()
+{
+	this->_ss >> this->_fov;
+}

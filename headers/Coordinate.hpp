@@ -18,5 +18,7 @@ public:
     Coordinate() = default;
 	explicit Coordinate(std::string params);
 	~Coordinate() = default;
+
+	[[nodiscard]] const std::vector<GLfloat>& getCoordinateVector() const;
 	void setCoordinate(const std::string& params);
 };

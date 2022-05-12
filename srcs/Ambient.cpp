@@ -7,10 +7,18 @@
 
 #include "Ambient.hpp"
 
-#include <utility>
-
 Ambient::Ambient(std::string  params): _params(std::move(params))
-{}
+{
+	this->paramsParse();
+
+	std::cout << "key: " << this->_key << std::endl;
+	std::cout << "intensive: " << this->_intensive << std::endl;
+	std::cout << "color: ";
+	for (auto& el: this->_color.getColor3fv())
+		std::cout << el << " ";
+	std::cout << std::endl;
+	std::cout << std::endl;
+}
 
 void Ambient::paramsParse()
 {
@@ -43,7 +51,6 @@ void Ambient::keyParse()
 
 void Ambient::colorParse()
 {
-	Parser::ssClear(this->_ss);
     this->_ss >> this->_str_color;
     this->_color.setColor(this->_str_color);
 }

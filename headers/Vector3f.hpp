@@ -17,6 +17,8 @@ public:
 
 	void norm();
 
+	void setVector3f(const std::string& params);
+
 	[[nodiscard]] const std::vector<GLfloat>& getV3f() const noexcept;
 	[[nodiscard]] GLfloat getLen() const noexcept;
 

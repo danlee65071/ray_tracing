@@ -7,8 +7,6 @@
 
 #include "Parser.hpp"
 
-#include <utility>
-
 Parser::Parser(std::string  filename): _file_name(std::move(filename))
 {
     this->CheckFileName();
@@ -94,7 +92,7 @@ const char* Parser::BadFileName::what() const noexcept
 
  const char* Parser::InvalidParameter::what() const noexcept
  {
-     return "Invalid coordinate parameter!";
+     return "Invalid _coordinate parameter!";
  }
 
  const char *Parser::BadFile::what() const noexcept

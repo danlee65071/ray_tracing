@@ -7,5 +7,22 @@
 
 #include "Sphere.hpp"
 
-Sphere::Sphere(std::string params): AFigure(std::move(params)) {}
+Sphere::Sphere(std::string params): AFigure(std::move(params))
+{
+	this->keyParse();
+	this->centerParse();
+	this->radiusParse();
+	this->colorParse();
 
+	std::cout << "key: " << this->_key << std::endl;
+	std::cout << "center: ";
+	for (auto& el: this->_center.getCoordinateVector())
+		std::cout << el << " ";
+	std::cout << std::endl;
+	std::cout << "radius: " << this->_radius << std::endl;
+	std::cout << "color: ";
+	for (auto& el: this->_color.getColor3fv())
+		std::cout << el << " ";
+	std::cout << std::endl;
+	std::cout << std::endl;
+}

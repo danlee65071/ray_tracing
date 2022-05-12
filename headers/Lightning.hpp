@@ -17,9 +17,8 @@ private:
 	Coordinate  _coordinate;
 
 	void coordinateParse();
+	void paramsParse();
 public:
     explicit Lightning(std::string  params);
     ~Lightning() override = default;
-
-	void paramsParse() override;
 };

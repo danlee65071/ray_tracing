@@ -11,6 +11,8 @@
 
 class Ambient
 {
+private:
+	void paramsParse();
 protected:
     std::string         _params;
     GLfloat             _intensive{};
@@ -30,5 +32,4 @@ public:
     [[nodiscard]] const std::string& getParams() const;
     [[nodiscard]] GLfloat getIntensive() const;
     [[nodiscard]] const Color& getColor() const;
-	virtual void paramsParse();
 };

@@ -15,7 +15,7 @@ RayTracing::RayTracing(const std::vector<std::string>& pars_vector)
     for (auto &line: pars_vector)
     {
         Parser::ssClear(ss);
-        ss << line;
+		ss << line;
         ss >> key;
 		!this->_m[key] ? throw WrongObject() : this->_m[key](ss.str());
     }
