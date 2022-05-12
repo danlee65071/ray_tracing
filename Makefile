@@ -57,7 +57,7 @@ PATH_OBJS = $(addprefix $(DIR_OBJS)/, $(OBJS))
 CC = c++
 
 # флаги
-FLAGS = -Wall -Werror -Wextra -g -std=c++17
+FLAGS = -Wall -Werror -Wextra  -g -std=c++17
 
 # команда удаления
 RM = rm -rf
@@ -72,7 +72,7 @@ all: $(NAME)
 # получение исполняемого файла
 $(NAME): write_logo create_dirs $(PATH_OBJS)
 	@echo "$(GREEN)\nObjects was created $(RESET)"
-	@$(CC) $(FLAGS) -I $(DIR_HEADERS) $(PATH_OBJS) -o $@
+	@$(CC) $(FLAGS) -framework GLUT -framework OpenGL -I $(DIR_HEADERS) $(PATH_OBJS) -o $@
 	@echo "$(GREEN)Simply the best hard multi-d ray-tracing mother lover by peace dukes was compiled $(RESET)"
 
 

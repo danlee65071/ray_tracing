@@ -8,9 +8,12 @@
 #pragma once
 
 #include <iostream>
-#include <OpenGl/glu.h>
+
+#define GL_SILENCE_DEPRECATION
 #include <OpenGL/gl.h>
+#include <OpenGL/glu.h>
 #include <GLUT/glut.h>
+
 #include <vector>
 #include <map>
 #include <string>
@@ -26,3 +29,6 @@
 #include "Coordinate.hpp"
 #include "Parser.hpp"
 #include "Vector3f.hpp"
+
+#define WIDTH 640
+#define HEIGHT 420

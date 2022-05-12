@@ -1,11 +1,43 @@
 #include "RayTracing.hpp"
 
+void init(void)
+{
+	glClearColor(0.0,0.0,0.0,0.0);
+	glMatrixMode(GL_PROJECTION);
+	glLoadIdentity();
+	glOrtho(0.0,1.0,0.0,1.0,-1.0,1.0);
+}
+
+void display()
+{
+	glClear(GL_COLOR_BUFFER_BIT);
+//	glColor3f(1.0,1.0,1.0);
+//	glBegin(GL_POLYGON);
+//	glVertex3f(0.25,0.25,0.0);
+//	glVertex3f(0.75,0.25,0.0);
+//	glVertex3f(0.75,0.75,0.0);
+//	glVertex3f(0.25,0.75,0.0);
+//	glEnd();
+//	glFlush();
+}
+
 int main(int argc, char** argv)
 {
-    if (argc != 2)
-        return -1;
-    Parser p(argv[1]);
-    RayTracing r(p.get_vector());
+
+	if (argc != 2) return -1;
+	glutInit(&argc,argv);
+	glutInitDisplayMode(GLUT_SINGLE|GLUT_RGB);
+	glutInitWindowSize(WIDTH,HEIGHT);
+	glutInitWindowPosition(100,100);
+	glutCreateWindow("RT");
+	init();
+	glutDisplayFunc(display);
+	glutMainLoop();
+
+//    Parser p(argv[1]);
+//    RayTracing r(p.get_vector());
+
+
 //    Color c("255 ,   60, 75.4");
 //	Vector3f v3f("15, 17, -3");
 //	for (auto& el: v3f.getV3f())
@@ -29,4 +61,5 @@ int main(int argc, char** argv)
 //	Ambient a("A 0.4 255,255,255");
 //	Lightning l("L 15,10,-25 0.5 255,255,255");
 //	Camera camera("C 0,0,-2 0,0,1 100");
+	return 0;
 }
