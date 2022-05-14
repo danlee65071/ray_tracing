@@ -9,10 +9,14 @@
 
 Sphere::Sphere(std::string params): AFigure(std::move(params))
 {
-	this->keyParse();
-	this->centerParse();
-	this->radiusParse();
-	this->colorParse();
+	std::stringstream ss;
+
+	Parser::ssClear(ss);
+	ss << this->_params;
+	Parser::keyParse(ss, this->_key);
+	Parser::centerParse(ss, this->_center);
+	Parser::floatParse(ss, this->_radius);
+	Parser::colorParse(ss, this->_color);
 
 	std::cout << "key: " << this->_key << std::endl;
 	std::cout << "center: ";

@@ -12,6 +12,7 @@
 class Sphere: public AFigure
 {
     private:
+		GLfloat	_radius{};
     public:
         explicit Sphere(std::string params);
         ~Sphere() override = default;

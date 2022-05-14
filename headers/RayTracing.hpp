@@ -25,12 +25,17 @@ class RayTracing
         std::vector<std::unique_ptr<Camera> >                               _v_camera;
         std::vector<std::unique_ptr<AFigure> >                              _v_figure;
         std::map<std::string, std::function<void(const std::string&)> >     _m;
+		GLubyte																_buf_image[WIDTH][HEIGHT][3];
 
         void FillMapTypes();
+		void GLDisplay();
+		void GLMakeBufImage(GLint y, GLint x, const Color& c);
     public:
         explicit RayTracing(const std::vector<std::string>& pars_vector);
         ~RayTracing() = default;
 
+		void GLInit(char **argv, int argc, int window_x = 0, int window_y = 0,
+					const std::string& programm_name = "RT");
 		class WrongObject: public std::exception
 		{
 		public:

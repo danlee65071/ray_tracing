@@ -59,3 +59,8 @@ void Camera::fovParse()
 {
 	this->_ss >> this->_fov;
 }
+
+ GLfloat Camera::getFOV() const
+ {
+	 return this->_fov;
+ }

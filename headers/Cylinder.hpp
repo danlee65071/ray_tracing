@@ -12,6 +12,8 @@
 class Cylinder: public AFigure
 {
     private:
+		GLfloat	_radius{};
+		GLfloat	_height{};
     public:
         explicit Cylinder(std::string params);
         ~Cylinder() override;

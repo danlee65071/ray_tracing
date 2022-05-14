@@ -8,6 +8,12 @@
 #pragma once
 
 #include "utils.hpp"
+#include "Ambient.hpp"
+#include "Camera.hpp"
+#include "Sphere.hpp"
+#include "Plane.hpp"
+#include "Cylinder.hpp"
+#include "Cone.hpp"
 
 class Parser
 {
@@ -17,7 +23,19 @@ class Parser
 
         void CheckFileName() const;
 
-        static size_t CheckSpace(const std::string& line) ;
+        static size_t CheckSpace(const std::string& line);
+
+		void keyParse(std::stringstream& ss, std::string& key);
+		Color colorParse(std::stringstream& ss);
+		Vector3f vectorParse(std::stringstream& ss);
+		GLfloat floatParse(std::stringstream& ss);
+
+		std::unique_ptr<Ambient> parseAmbient(std::stringstream& ss);
+		std::unique_ptr<Camera> parseCamera(std::stringstream& ss);
+		std::unique_ptr<AFigure> parseSphere(std::stringstream& ss);
+		std::unique_ptr<AFigure> parsePlane(std::stringstream& ss);
+		std::unique_ptr<AFigure> parseCylinder(std::stringstream& ss);
+		std::unique_ptr<AFigure> parseCone(std::stringstream& ss);
     public:
         explicit Parser(std::string  filename);
         ~Parser();
@@ -27,6 +45,8 @@ class Parser
         static void parseVector(const std::string& params, std::vector<GLfloat>& v);
 
 		static void ssClear(std::stringstream& ss);
+
+
 
         class BadFileName: public std::exception
         {

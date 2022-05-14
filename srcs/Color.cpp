@@ -26,7 +26,7 @@ void Color::setColor(const std::string& params)
 {
 	auto				check = [](GLfloat param) -> GLfloat
 	{
-		return (param < 0) ? (0) : ((param > 1) ? (1) : (param));
+		return (param < 0) ? (0) : ((param > 255) ? (255) : (param));
 	};
 	Parser::parseVector(params, this->_v_color);
     for (auto& el: this->_v_color)

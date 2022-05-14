@@ -75,7 +75,60 @@ void Parser::ssClear(std::stringstream& ss)
 	 ss.str("");
 }
 
-const char* Parser::BadFileName::what() const noexcept
+
+ void Parser::keyParse(std::stringstream& ss, std::string& key)
+ {
+	 ss >> key;
+ }
+
+ Color Parser::colorParse(std::stringstream& ss)
+ {
+	 std::string str;
+	 Color c;
+
+	 ss >> str;
+	 c.setColor(str);
+	 return c;
+ }
+
+ GLfloat Parser::floatParse(std::stringstream& ss)
+ {
+	 GLfloat f;
+	 ss >> f;
+	 return f;
+ }
+
+ void Parser::directionParse(std::stringstream& ss, Vector3f& d)
+ {
+	 std::string str;
+	 ss >> str;
+	 d.setVector3f(str);
+ }
+
+ Vector3f Parser::vectorParse(std::stringstream& ss)
+ {
+	 Vector3f c;
+	 std::string str;
+
+	 ss >> str;
+	 c.setVector3f(str);
+	 return c;
+ }
+
+std::unique_ptr<Ambient> Parser::parseAmbient(std::stringstream& ss)
+{
+	return std::make_unique<Ambient>(this->floatParse(ss), this->colorParse(ss));
+}
+
+ std::unique_ptr<Camera> Parser::parseCamera(std::stringstream &ss)
+ {
+	 this->coordinateParse();
+	 this->directionParse();
+	 this->fovParse();
+	 return std::unique_ptr<Camera>(this->);
+ }
+
+ const char* Parser::BadFileName::what() const noexcept
 {
     return "Bad filename!";
 }

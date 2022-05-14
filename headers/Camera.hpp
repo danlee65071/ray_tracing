@@ -12,13 +12,8 @@
 class Camera
 {
     private:
-        std::string 		_params;
-		Coordinate			_coordinate;
+		Vector3f			_coordinate;
 		Vector3f			_direction;
-		std::stringstream	_ss;
-		std::string			_key;
-		std::string			_str_coordinate;
-		std::string			_str_direction;
 		GLfloat				_fov{};
 
 		void keyParse();
@@ -29,7 +24,7 @@ class Camera
         explicit Camera(std::string  params);
         ~Camera();
 
-
+		[[nodiscard]] GLfloat getFOV() const;
 		void paramsParse();
         [[nodiscard]] const std::string& getParams() const;
 };

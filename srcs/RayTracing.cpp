@@ -11,7 +11,8 @@ RayTracing::RayTracing(const std::vector<std::string>& pars_vector)
 {
     std::stringstream   ss;
     std::string         key;
-    this->FillMapTypes();
+
+	this->FillMapTypes();
     for (auto &line: pars_vector)
     {
         Parser::ssClear(ss);
@@ -57,6 +58,35 @@ void RayTracing::FillMapTypes()
         {
             this->_v_figure.push_back(std::make_unique<Cone>(params));
         });
+}
+
+void RayTracing::GLInit(char **argv, int argc, int window_x, int window_y,
+						const std::string &programm_name)
+{
+	glutInit(&argc,argv);
+	glutInitDisplayMode(GLUT_SINGLE|GLUT_RGB);
+	glutInitWindowSize(WIDTH,HEIGHT);
+	glutInitWindowPosition(window_x,window_y);
+	glutCreateWindow(programm_name.c_str());
+
+	glClearColor(0.0,0.0,0.0,0.0);
+	glShadeModel(GL_FLAT);
+	makeCheckImage();
+	glPixelStorei(GL_UNPACK_ALIGNMENT,1);
+}
+
+ void RayTracing::GLDisplay()
+{
+	glClear(GL_COLOR_BUFFER_BIT);
+	for (auto& figure: this->_v_figure)
+		figure->display();
+	glFlush();
+}
+
+void RayTracing::GLMakeBufImage(GLint y, GLint x, const Color& c)
+{
+	for (int i = 0; i < 3; ++i)
+		this->_buf_image[y][x][i] = static_cast<GLubyte>(c.getColor3fv()[i]);
 }
 
  const char *RayTracing::WrongObject::what() const noexcept
